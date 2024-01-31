@@ -64,5 +64,8 @@ scaling issues
 QLORA Finetune LLaMa 7b
 3B parameter
 
+
+https://sites.google.com/view/irinarish/incite-project
+https://sites.google.com/view/irinalab/blog/robin-v1-0
 You should. The specs are good enough for running one of these: https://huggingface.co/TheBloke?search_models=OpenHermes-2.5-mi 
 8938802245
