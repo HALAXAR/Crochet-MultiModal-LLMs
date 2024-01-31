@@ -1,0 +1,67 @@
+Ayush Kaushal6:07 PM
+CERC-AAI Lab
+project: INCITE
+Some of the projects
+Red Pajama INCITE (in collaboration with together ai)
+Continual Pretraining
+Robin - A suit of Multimodal LLMs
+Lag LLaMa
+MAGMA (Multimodal Alignment)
+Broken Neural Scaling Laws
+Eleuther AI
+LAION AI
+Ayush Kaushal6:08 PM
+Frontier, Summit
+Ayush Kaushal6:15 PM
+SLURM
+LSB
+Ayush Kaushal6:18 PM
+https://github.com/AGI-Collective/Robin#team
+Ayush Kaushal6:21 PM
+Hi-NOLIN
+
+
+
+
+What do you train? -> Neural Network
+How do you train? -> Optimizer + Back Propagation
+What do you train it on? -> Data + Training Loss/Reward/Objective function
+Where do you train it on? -> GPU (also the issues with scaling and all)
+How well you trained it? -> Evaluating/Benchmarking performance.
+
+
+
+data 
+nature and behaviour of model
+fine tuning 
+benchmarking and evaluating 
+
+optimisation algorithm
+what are you training it on and how is the behaviour
+
+
+
+different inputs and behaviour of the model based on the inputs 
+
+
+
+https://storage.googleapis.com/deepmind-media/gemini/gemini_1_report.pdf
+GCP Free Gemini API - upto 60call per minute
+DocVQA: https://rrc.cvc.uab.es/?ch=17
+Ayush Kaushal6:33 PM
+InfographicVQA: https://www.docvqa.org/datasets/infographicvqa
+PDF-VQA: https://arxiv.org/abs/2304.06447
+Ayush Kaushal6:34 PM
+bard.google.com
+`Metrics` Evaluation Metrics
+
+long tail distribution
+
+
+https://www.statology.org/wp-content/uploads/2022/05/longtail1-1.jpg
+number of parameters and the data 
+scaling issues
+QLORA Finetune LLaMa 7b
+3B parameter
+
+8938802245
