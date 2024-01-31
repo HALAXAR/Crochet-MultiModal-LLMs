@@ -2,8 +2,8 @@
 A multimodal LLM Research Repository.
 Contributors : Hariansh Vashist | Divyansh goyal
 
-# Research Statement : 
-## Hallucinations in Multimodal Large Language Models based on vectorsearch datasets.
+##Research Statement : 
+###Hallucinations in Multimodal Large Language Models based on vectorsearch datasets.
 
 References : 
 [https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models]Awesome MultiModal LLM's Large Language Models(github repo)
