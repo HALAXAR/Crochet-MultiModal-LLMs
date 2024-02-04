@@ -28,7 +28,7 @@ class Gemini_model:
         self.currentprompt = prompt
 
     def handle_gemini_response(self):
-        model = genai.GenerativeModel("geminipro-vision")
+        model = genai.GenerativeModel("gemini-pro-vision")
         response = None
         if self.currentprompt != "":
             response = model.generate_content([self.currentprompt, self.currentimage])
