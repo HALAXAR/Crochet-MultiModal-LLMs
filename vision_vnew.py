@@ -10,7 +10,7 @@ file_path = "F:\example-bill.jpeg"
 
 
 class Gemini_model:
-    def __ini__(self, generated_api_key, file_path):
+    def __init__(self, generated_api_key, file_path):
         self.apikey = generated_api_key
         self.filepath = file_path
         self.genai = genai.configure(api_key=generated_api_key)
