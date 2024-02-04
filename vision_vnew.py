@@ -3,21 +3,52 @@ load_dotenv()
 import os
 from PIL import Image
 import google.generativeai as genai
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+local_api_key =  os.getenv("GOOGLE_API_KEY")
+genai.configure(api_key=local_api_key)
+
+file_path = "F:\example-bill.jpeg"
 
 
-def get_gemini_response(input,image):
-    model = genai.GenerativeModel('gemini-pro-vision')
-    if input!="":
-       response = model.generate_content([input,image])
-    else:
-       response = model.generate_content(image)
-    return response.text
 
-print("-"*10+"GEMINI-VISION-APPLICATION"+"-"*10)
-file_path="F:\example-bill.jpeg"
-img =Image.open(file_path)
-Input=input("Input Prompt: ")
-response=get_gemini_response(Input,img)
-print(response)
+class Gemini_model:
+    def __ini__(self, generated_api_key, file_path):
+        self.apikey = generated_api_key
+        self.filepath = file_path
+
+    def get_gemini_response(self,input,image):
+        model = genai.GenerativeModel('geminipro-vision')
+        if input!="":
+           response = model.generate_content([input,image])
+        else:
+           response = model.generate_content(image)
+        return response.text
+
+    def welcome_statement(self):
+        print("-"*10+"GEMINI-VISION-APPLICATION"+"-"*10)        
+    def load_image(self):
+        img = Image.open(self.filepath)
+        self.currentimage = img
+
+    def handle_input_prompt(self):
+        prompt = input("Enter your prompt :")
+        self.currentprompt = prompt
+
+    def handle_gemini_response(self):
+        model = genai.GenerativeModel("geminipro-vision")
+        response = None
+        if self.currentprompt != "":
+            response = model.generate_content([self.currentprompt, self.currentimage])
+        else:
+            response = model.generate_content(self.currentimage)
+        self.currentresponse = response.text
+
+    def display_response(self):
+        print(self.currentresponse)
+    
+
+gemini_instance = Gemini_model(local_api_key, file_path)
+gemini_instance.welcome_statement()
+gemini_instance.load_image()
+gemini_instance.handle_input_prompt()
+gemini_instance.handle_gemini_response()
+gemini_instance.display_response()
