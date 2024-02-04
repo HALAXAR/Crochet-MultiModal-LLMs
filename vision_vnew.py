@@ -4,7 +4,7 @@ import os
 from PIL import Image
 import google.generativeai as genai
 local_api_key =  os.getenv("GOOGLE_API_KEY")
-
+genai.configure(api_key=local_api_key)
 file_path = "F:\example-bill.jpeg"
 
 #creating a class for Gemini model which encapsulates individual function definitions in the global scope
@@ -15,7 +15,7 @@ class Gemini_model:
     def __init__(self, generated_api_key, file_path):
         self.apikey = generated_api_key #here we set the new object property apikey from the argument generated_api_key
         self.filepath = file_path #setting new object property filepath from the argument file_path
-        self.genai = genai.configure(api_key=generated_api_key) #here setting the genai property after configuring the genai model from the passed api key
+        #self.genai = genai.configure(api_key=generated_api_key) here setting the genai property after configuring the genai model from the passed api key
 
     def welcome_statement(self):
         print("-"*10+"GEMINI-VISION-APPLICATION"+"-"*10)        
@@ -28,7 +28,7 @@ class Gemini_model:
         self.currentprompt = prompt
 
     def handle_gemini_response(self):
-        model = self.genai.GenerativeModel("geminipro-vision")
+        model = genai.GenerativeModel("geminipro-vision")
         response = None
         if self.currentprompt != "":
             response = model.generate_content([self.currentprompt, self.currentimage])
