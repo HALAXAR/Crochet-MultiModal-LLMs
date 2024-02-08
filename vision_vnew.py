@@ -20,6 +20,8 @@ import os
 from PIL import Image
 import google.generativeai as genai
 
+
+
 ## Fetching the API key using the os library
 local_api_key =  os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=local_api_key)
@@ -40,15 +42,20 @@ class Gemini_model:
     def welcome_statement(self):
         print("-"*10+"GEMINI-VISION-APPLICATION"+"-"*10)        
 
-## This method is used for the opening the image for the model to understand
+
+## the below model opens the image (the term open computationally refers to reading the encoded pixel values of the image from the sources like .jpg, png, , .bmp and others) 
     def load_image(self):
         img = Image.open(self.filepath)
         self.currentimage = img
 
+
 ## This method is used to get questions from the user that would serve as prompt for the generation of an output
+
     def handle_input_prompt(self):
         prompt = input("Enter your prompt :")
         self.currentprompt = prompt
+
+
 
 
 ##This is the method that is being used for the generation of a response from the gemini-pro-vision model
@@ -67,6 +74,7 @@ class Gemini_model:
 
     def display_response(self):
         print(self.currentresponse) # Displaying the generated response
+
     
 
 #now as we instantiate stuff, the gemini_instance become the term "self" we used earlier in the class
@@ -75,4 +83,7 @@ gemini_instance.welcome_statement()
 gemini_instance.load_image()
 gemini_instance.handle_input_prompt()
 gemini_instance.handle_gemini_response()
+
+
 gemini_instance.display_response()
+
