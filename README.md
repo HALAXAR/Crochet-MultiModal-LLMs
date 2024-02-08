@@ -10,12 +10,12 @@ the latter is what is our focus is on at the moment.
 
 
 Key terminologies:
-###Ground truth in datasets 
-###Multimodality
-###Evaluation metric 
+### Ground truth in datasets 
+### Multimodality
+### Evaluation metric 
 
 Compute:
-###Azure machine learning studio (free credit accounts exist but they will require student ID's)
+### Azure machine learning studio (free credit accounts exist but they will require student ID's)
 
 References : 
 [https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models]Awesome MultiModal LLM's Large Language Models(github repo)
