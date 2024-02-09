@@ -21,6 +21,8 @@ References :
 [https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models]Awesome MultiModal LLM's Large Language Models(github repo)
 [https://huyenchip.com/2023/10/10/multimodal.html] Chip Huyen Multimodal LLM web research paper.
 
+Medical Visual questions answering : MedVQA
+https://paperswithcode.com/task/medical-visual-question-answering
 
 Research Paper to be published on over:
 Arxiv
