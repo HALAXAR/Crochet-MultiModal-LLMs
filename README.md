@@ -29,6 +29,10 @@ Arxiv
 Google-Scholar
 ResearchGate
 
+###Evaluation metrics:
+F1 scores (precision and recall) , classification accuracy, BLEU (bilingual evaluation understudy) , ROUGE (Recall oriented understudy for gisted evaluation) , MAUVE (https://krishnap25.github.io/mauve/) , ANLS (docvqa -> Average normalized levenshtein similarity), MAP (docvqa -> Mean Average Precision), AUC (area under curve), Confusion matrix
+
+
 Potential popular conferences:
 IEEE
 ICVPR
