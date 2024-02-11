@@ -18,7 +18,7 @@ Compute:
 ### Azure machine learning studio (free credit accounts exist but they will require student ID's)
 
 References : 
-[https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models]Awesome MultiModal LLM's Large Language Models(github repo)
+[https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models] Awesome MultiModal LLM's Large Language Models(github repo)
 [https://huyenchip.com/2023/10/10/multimodal.html] Chip Huyen Multimodal LLM web research paper.
 
 Medical Visual questions answering : MedVQA
@@ -28,6 +28,10 @@ Research Paper to be published on over:
 Arxiv
 Google-Scholar
 ResearchGate
+
+### Evaluation metrics:
+F1 scores (precision and recall) , classification accuracy, BLEU (bilingual evaluation understudy) , ROUGE (Recall oriented understudy for gisted evaluation) , MAUVE (https://krishnap25.github.io/mauve/) , ANLS (docvqa -> Average normalized levenshtein similarity), MAP (docvqa -> Mean Average Precision), AUC (area under curve), Confusion matrix
+
 
 Potential popular conferences:
 IEEE
