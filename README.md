@@ -8,7 +8,6 @@ Research Statement :
 the latter is what is our focus is on at the moment.
 ### Currently Exploring : Google Gemini Pro + DOCVQA 
 
-
 Key terminologies:
 ### Ground truth in datasets 
 ### Multimodality
@@ -16,6 +15,15 @@ Key terminologies:
 
 Compute:
 ### Azure machine learning studio (free credit accounts exist but they will require student ID's)
+
+Models to train:
+Google gemini pro
+Visual BERT
+BERT 
+M4C
+LXMERT
+ViLT
+LayoutLM2
 
 References : 
 [https://github.com/BradyFU/Awesome-Multimodal-Large-Language-Models] Awesome MultiModal LLM's Large Language Models(github repo)
